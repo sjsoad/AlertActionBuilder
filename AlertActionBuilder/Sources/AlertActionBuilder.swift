@@ -10,11 +10,11 @@ import UIKit
 
 public class AlertActionConfig {
     
-    private(set) var title: String?
-    private(set) var style: UIAlertActionStyle
-    private(set) var handler: ((UIAlertAction) -> Void)?
+    private(set) public var title: String?
+    private(set) public var style: UIAlertActionStyle
+    private(set) public var handler: ((UIAlertAction) -> Void)?
     
-    init(title: String?, style: UIAlertActionStyle, handler: ((UIAlertAction) -> Void)? = nil) {
+    public init(title: String?, style: UIAlertActionStyle, handler: ((UIAlertAction) -> Void)? = nil) {
         self.title = title
         self.style = style
         self.handler = handler
