@@ -2,6 +2,7 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
+s.swift_version = '4.0'
 s.ios.deployment_target = '10.0'
 s.name = "AlertActionBuilder"
 s.summary = "AlertActionBuilder allows you to create config class, that will be user for UIAlertAction init"
@@ -21,7 +22,7 @@ s.homepage = "https://github.com/sjsoad/AlertActionBuilder"
 
 
 # 6 - Replace this URL with your own Git URL from "Quick Setup"
-s.source = { :git => "https://github.com/sjsoad/AlertActionBuilder", :tag => "#{s.version}"}
+s.source = { :git => "https://github.com/sjsoad/AlertActionBuilder.git", :tag => "#{s.version}"}
 
 # 7
 s.framework = "UIKit"
