@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class AlertActionConfig {
+open class AlertActionConfig {
     
     private(set) public var title: String?
     private(set) public var style: UIAlertActionStyle
