@@ -14,7 +14,7 @@ open class AlertActionConfig {
     private(set) public var style: UIAlertActionStyle
     private(set) public var handler: ((UIAlertAction) -> Void)?
     
-    init(title: String?, style: UIAlertActionStyle, handler: ((UIAlertAction) -> Void)? = nil) {
+    public init(title: String?, style: UIAlertActionStyle, handler: ((UIAlertAction) -> Void)? = nil) {
         self.title = title
         self.style = style
         self.handler = handler
