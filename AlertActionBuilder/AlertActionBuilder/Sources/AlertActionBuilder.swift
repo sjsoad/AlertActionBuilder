@@ -21,9 +21,9 @@ open class AlertActionConfig {
     }
 }
 
-extension UIAlertAction {
+public extension UIAlertAction {
     
-    public static func build(from config: AlertActionConfig) -> UIAlertAction {
+    static func build(from config: AlertActionConfig) -> UIAlertAction {
         return UIAlertAction(title: config.title, style: config.style, handler: config.handler)
     }
     
