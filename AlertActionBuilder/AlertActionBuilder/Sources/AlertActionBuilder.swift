@@ -8,7 +8,15 @@
 
 import UIKit
 
-open class AlertActionConfig {
+public protocol AlertActionConfigProvider {
+    
+    var title: String? { get }
+    var style: UIAlertActionStyle { get }
+    var handler: ((UIAlertAction) -> Void)? { get }
+    
+}
+
+open class AlertActionConfig: AlertActionConfigProvider {
     
     public private(set) var title: String?
     public private(set) var style: UIAlertActionStyle
@@ -23,7 +31,7 @@ open class AlertActionConfig {
 
 public extension UIAlertAction {
     
-    static func build(from config: AlertActionConfig) -> UIAlertAction {
+    static func build(from config: AlertActionConfigProvider) -> UIAlertAction {
         return UIAlertAction(title: config.title, style: config.style, handler: config.handler)
     }
     
