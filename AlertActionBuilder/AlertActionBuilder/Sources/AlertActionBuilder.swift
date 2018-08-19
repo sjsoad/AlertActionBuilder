@@ -31,8 +31,8 @@ open class AlertActionConfig: AlertActionConfigProvider {
 
 public extension UIAlertAction {
     
-    static func build(from config: AlertActionConfigProvider) -> UIAlertAction {
-        return UIAlertAction(title: config.title, style: config.style, handler: config.handler)
+    convenience init(from config: AlertActionConfigProvider) {
+        self.init(title: config.title, style: config.style, handler: config.handler)
     }
     
 }
