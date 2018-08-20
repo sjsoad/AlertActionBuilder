@@ -9,11 +9,11 @@
 import UIKit
 
 public protocol AlertActionConfigProvider {
-    
+
     var title: String? { get }
     var style: UIAlertActionStyle { get }
     var handler: ((UIAlertAction) -> Void)? { get }
-    
+
 }
 
 open class AlertActionConfig: AlertActionConfigProvider {
@@ -31,7 +31,7 @@ open class AlertActionConfig: AlertActionConfigProvider {
 
 public extension UIAlertAction {
     
-    convenience init(from config: AlertActionConfigProvider) {
+    convenience init(with config: AlertActionConfigProvider) {
         self.init(title: config.title, style: config.style, handler: config.handler)
     }
     
