@@ -18,9 +18,9 @@ public protocol AlertActionConfigProvider {
 
 open class AlertActionConfig: AlertActionConfigProvider {
     
-    public private(set) var title: String?
-    public private(set) var style: UIAlertActionStyle
-    public private(set) var handler: ((UIAlertAction) -> Void)?
+    public let title: String?
+    public let style: UIAlertActionStyle
+    public let handler: ((UIAlertAction) -> Void)?
     
     public init(title: String?, style: UIAlertActionStyle, handler: ((UIAlertAction) -> Void)? = nil) {
         self.title = title
