@@ -16,7 +16,7 @@ public protocol AlertActionConfigProvider {
 
 }
 
-public struct AlertActionConfig: AlertActionConfigProvider {
+public class AlertActionConfig: AlertActionConfigProvider {
     
     public let title: String?
     public let style: UIAlertActionStyle
