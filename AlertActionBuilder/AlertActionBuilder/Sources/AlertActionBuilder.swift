@@ -11,7 +11,7 @@ import UIKit
 public protocol AlertActionConfigProvider {
 
     var title: String? { get }
-    var style: UIAlertActionStyle { get }
+    var style: UIAlertAction.Style { get }
     var handler: ((UIAlertAction) -> Void)? { get }
 
 }
@@ -19,10 +19,10 @@ public protocol AlertActionConfigProvider {
 public class AlertActionConfig: AlertActionConfigProvider {
     
     public let title: String?
-    public let style: UIAlertActionStyle
+    public let style: UIAlertAction.Style
     public let handler: ((UIAlertAction) -> Void)?
     
-    public init(title: String?, style: UIAlertActionStyle, handler: ((UIAlertAction) -> Void)? = nil) {
+    public init(title: String?, style: UIAlertAction.Style, handler: ((UIAlertAction) -> Void)? = nil) {
         self.title = title
         self.style = style
         self.handler = handler

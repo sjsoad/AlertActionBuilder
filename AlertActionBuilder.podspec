@@ -9,7 +9,7 @@ s.summary = "AlertActionBuilder allows you to create config class, that will be 
 s.requires_arc = true
 
 # 2
-s.version = "0.0.8"
+s.version = "0.0.9"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
