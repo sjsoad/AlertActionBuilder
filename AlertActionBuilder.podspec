@@ -2,14 +2,14 @@ Pod::Spec.new do |s|
 
 # 1
 s.platform = :ios
-s.swift_version = '4.0'
+s.swift_version = '4.2'
 s.ios.deployment_target = '10.0'
 s.name = "AlertActionBuilder"
 s.summary = "AlertActionBuilder allows you to create config class, that will be user for UIAlertAction init"
 s.requires_arc = true
 
 # 2
-s.version = "0.0.9"
+s.version = "0.1.0"
 
 # 3
 s.license = { :type => "MIT", :file => "LICENSE" }
